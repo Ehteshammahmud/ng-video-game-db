@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomeComponent } from './components/home/home.component';
+import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
+import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 
 @NgModule({
   declarations: [AppComponent, SearchBarComponent, HomeComponent],
