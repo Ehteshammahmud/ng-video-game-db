@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { APIResponse, Game } from 'src/app/models';
 import { HttpService } from 'src/app/services/http.service';
 
 @Component({
@@ -25,5 +26,12 @@ export class HomeComponent implements OnInit {
       }
     });
   }
-  searchGames(sort: string, search?: string): void {}
+  searchGames(sort: string, search?: string): void {
+    this.httpService
+      .getGameList(sort, search)
+      .subscribe((gameList: APIResponse<Game>) => {
+        this.games = gameList.results;
+        console.log(gameList);
+      });
+  }
 }
