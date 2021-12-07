@@ -24,12 +24,13 @@
           class="game-thumbnail"
         />
         >
-        <p>*ngIf="!game.background_image>No</p>
+        <p>*ngIf="!game.background_image>No image</p>
       </div>
       <div class="game-description">
         <p class="game-name">Name</p>
         <div class="game-platforms">
           <img
+            *ngFor="Let gamePlatform of game.parent_platforms"
             class="game-platform"
             src="https://opensource.com/sites/default/files/lead-images/header.png"
             alt="slug"
