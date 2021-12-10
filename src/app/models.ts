@@ -13,7 +13,6 @@ export interface Game {
   screenshots: Array<Screenshots>;
   trailers: Array<Trailer>;
 }
-
 export interface APIResponse<T> {
   results: Array<T>;
 }
