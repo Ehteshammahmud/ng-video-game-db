@@ -17,8 +17,9 @@
   </mat-form-field>
 </div>
 
-<div class="games" (click)="openGameDetails(game.id)">
-  ><ng-container *ngFor="let game of games">
+<div class="games">
+  <ng-container *ngFor="let game of games">
+    (click)="openGameDetails(game.id)"> >
     <div class="game">
       <div class="game-thumb-container">
         <img
