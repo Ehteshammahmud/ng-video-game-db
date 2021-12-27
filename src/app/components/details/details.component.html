@@ -12,7 +12,9 @@
             >{{ genre.name }}<span *ngIf="!last">, </span></span
           >
         </p>
-        <div class="game-gauge"></div>
+        <div class="game-gauge">
+          <mwl-gauge class="two" [max]="100"> </mwl-gauge>
+        </div>
       </div>
     </div>
   </div>
