@@ -13,7 +13,14 @@
           >
         </p>
         <div class="game-gauge">
-          <mwl-gauge class="two" [max]="100"> </mwl-gauge>
+          <mwl-gauge
+            class="two"
+            [max]="100"
+            [dialStartAngle]="180"
+            [dialEndAngle]="0"
+            [value]="gameRating"
+          >
+          </mwl-gauge>
         </div>
       </div>
     </div>
