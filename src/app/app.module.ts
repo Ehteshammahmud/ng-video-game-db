@@ -15,10 +15,15 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { DetailsComponent } from './components/details/details.component';
-import { TestComponent } from './component/test/test.component';
+import { MatOption, MatOptionModule } from '@angular/material/core';
 
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, HomeComponent, DetailsComponent, TestComponent],
+  declarations: [
+    AppComponent,
+    SearchBarComponent,
+    HomeComponent,
+    DetailsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +34,7 @@ import { TestComponent } from './component/test/test.component';
     MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatOptionModule,
     FormsModule,
   ],
   providers: [
