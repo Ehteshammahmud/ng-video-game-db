@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Game } from 'src/app/models';
 
 @Component({
   selector: 'app-details',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class DetailsComponent implements OnInit {
   gameRating = 0;
   constructor() {}
+  game!: Game;
 
   ngOnInit(): void {}
 }
