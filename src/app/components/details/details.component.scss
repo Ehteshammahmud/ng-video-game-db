@@ -3,3 +3,15 @@
   margin: 20px auto;
   position: relative;
 }
+.details {
+  ::ng-deep mwl-gauge {
+    width: 150px;
+    height: 150px;
+    display: block;
+    padding: 10px;
+
+    .dial {
+      stroke-width: 10;
+    }
+  }
+}
