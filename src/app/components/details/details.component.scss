@@ -36,3 +36,15 @@
     }
   }
 }
+
+.game {
+  &-banner {
+    height: 442px;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+      filter: blur(5px);
+    }
+  }
+}
