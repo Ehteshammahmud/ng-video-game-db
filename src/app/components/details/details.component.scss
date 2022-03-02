@@ -47,4 +47,9 @@
       filter: blur(5px);
     }
   }
+  &-content {
+    text-align: center;
+    position: relative;
+    top: -200px;
+  }
 }
