@@ -52,4 +52,13 @@
     position: relative;
     top: -200px;
   }
+  &-header {
+    &-title {
+      font-size: 70px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 70px;
+      white-space: nowrap;
+    }
+  }
 }
