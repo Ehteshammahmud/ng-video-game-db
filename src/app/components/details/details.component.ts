@@ -8,7 +8,14 @@ import { Game } from 'src/app/models';
 })
 export class DetailsComponent implements OnInit {
   gameRating = 0;
-  constructor() {}
+  gameId: string;
+  game: Game;
+  routeSub: Subscription;
+  gameSub: Subscription;
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private httpService: HttpService
+  ) {}
   game!: Game;
 
   ngOnInit(): void {}
