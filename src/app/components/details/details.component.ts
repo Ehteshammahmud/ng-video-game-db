@@ -24,6 +24,13 @@ export class DetailsComponent implements OnInit {
       this.getGameDetails(this.gameId);
     });
   }
+  getGameDetails(id: string): void {
+    this.gameSub = this.httpService
+      .getGameDetails(id)
+      .subscribe((gameResp: Game) => {
+        this.game = gameResp;
+      }
+    }
 }
 
 getColor(value: number): string {
